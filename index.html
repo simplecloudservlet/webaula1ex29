@@ -1,0 +1,73 @@
+<!-- TODO1: jQuery: mude um rotulo com o seletor CSS especifico '#' -->
+<!-- TODO2: jQuery: mude varios rotulos com o seletor CSS de classe '.' -->
+<!-- TODO3: jQuery: mude todos os marcadores <label> -->
+<!-- TODO4: jQuery: mude todos os componentes que tem o atributo 'id' -->
+
+<!DOCTYPE html>
+<html lang="bzs">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Comércio Eletrônico</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
+	<script src="js/scripts.js"></script>
+	<script src="js/decimal.js"></script>
+	<script src="js/jquery-3.7.1.js"></script>
+
+</head>
+
+<body>
+
+	<!-- TODO1 -->
+	<label id="rotulo1">TODO1</label>
+	<button id='botao1' onclick="testarJQuery1()">jQuery1: mudar um rotulo</button>
+	<br>
+	<br>
+
+	<!-- TODO2 -->
+	<label id="rotulo2" class="estiloAvaliacao">TODO2</label>
+	<label id="rotulo3" class="estiloAvaliacao">TODO2</label>
+	<label id="rotulo4" class="estiloAvaliacao">TODO2</label>
+	<button id='botao2' onclick="testarJQuery2()">jQuery2: mudar varios rotulos</button>
+	<br>
+	<br>
+
+	<!-- TODO3 -->
+	<button id='botao3' onclick="testarJQuery3()">jQuery3: mudar label</button>
+	<br>
+	<br>
+
+		<!-- TODO4 -->
+		<button id='botao4' onclick="testarJQuery4()">jQuery4: mudar todos que tem 'id'</button>
+		<br>
+		<br>
+
+
+	<label id="rotuloAvaliacao" class="estiloAvaliacao">Avaliação da Compra</label>
+	<br>
+
+	<!-- <label id="rotuloAvaliacao">Avaliação da Compra</label>
+	-->
+
+	<select id="notas" name="notasJS" onchange="avaliarCompra()">
+		<option value="0">0</option>
+		<option value="5">5</option>
+		<option value="10">10</option>
+	</select>
+
+	<figure>
+		<img id='carrinho' src='img/vendas.png' width='100' height='50' alt='vendas'>
+		<figcaption>
+			<p>Comércio Eletrônico.</p>
+		</figcaption>
+	</figure>
+
+	<!-- TODO1 -->
+	<button onclick="comprar()">Efetuar compra</button>
+
+</body>
+
+</html>
