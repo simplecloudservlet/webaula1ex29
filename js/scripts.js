@@ -27,8 +27,7 @@ function testarJQuery3(){
 /* TODO4 */ 
 function testarJQuery4(){
     $( document ).ready(function() {
-        //$("h1").css("color","#0000ff");
-        $("[id]").css("color","#00ffff");
+        $("[id]").css("color","#00ffff"); /* Altera todos que tem o atributo 'id' */
         console.log( "TODO4" );
     });
 }
